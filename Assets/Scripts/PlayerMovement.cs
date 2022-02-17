@@ -21,8 +21,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        float playerInput = Input.GetAxis("Horizontal");
-        Vector2 pacmanVelocity = new Vector2(playerInput * moveSpeed, rb.velocity.y);
+        float playerInputHorizontal = Input.GetAxis("Horizontal");
+        float playerInputVertical = Input.GetAxis("Vertical");
+        Vector2 pacmanVelocity = new Vector2(playerInputHorizontal * moveSpeed, playerInputVertical * moveSpeed);
         rb.velocity = pacmanVelocity;
     }
 }
