@@ -47,3 +47,6 @@ TagManager:
   - name: FG
     uniqueID: 1036556925
     locked: 0
+  - name: Player
+    uniqueID: 3296637049
+    locked: 0
