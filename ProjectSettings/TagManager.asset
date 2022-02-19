@@ -16,7 +16,7 @@ TagManager:
   - BG
   - FG
   - Player
-  - 
+  - Ghost
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Pellet
     uniqueID: 3271391269
+    locked: 0
+  - name: Ghost
+    uniqueID: 2073158011
     locked: 0
   - name: Player
     uniqueID: 3296637049
