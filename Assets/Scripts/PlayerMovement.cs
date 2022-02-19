@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     float moveSpeed = 5f;
+
     Vector2 direction; 
     Rigidbody2D rb;
     
@@ -19,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
         Move();
         CheckInput();
         FlipSprite();
-        //transform.localRotation = Quaternion.Euler(0, 0, 90);
     }
 
     private void Move()
