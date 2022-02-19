@@ -3131,6 +3131,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &1804075819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 709473389503470181, guid: cf5e1617280c9e849997da88bede9da9,
+    type: 3}
+  m_PrefabInstance: {fileID: 709473387733997902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869085153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3149,7 @@ GameObject:
   - component: {fileID: 1869085156}
   - component: {fileID: 1869085155}
   - component: {fileID: 1869085154}
+  - component: {fileID: 1869085158}
   m_Layer: 11
   m_Name: Clyde
   m_TagString: Untagged
@@ -3221,8 +3228,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2073158011
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 6166928977712963422, guid: af23aafa4c37e8a47a1dd7b4398ee58f,
     type: 3}
@@ -3250,6 +3257,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869085158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869085153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edf218e7b576bd4c9a341360cd0ada0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1804075819}
 --- !u!1001 &709473387733997902
 PrefabInstance:
   m_ObjectHideFlags: 0
