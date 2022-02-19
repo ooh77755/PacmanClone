@@ -3143,6 +3143,7 @@ GameObject:
   - component: {fileID: 1869085156}
   - component: {fileID: 1869085155}
   - component: {fileID: 1869085154}
+  - component: {fileID: 1869085158}
   m_Layer: 11
   m_Name: Clyde
   m_TagString: Untagged
@@ -3250,6 +3251,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1869085158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869085153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64efe26267c0f4348ba300ee00762204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 709473387733997903}
+  withinRange: 10
+  speed: 2
 --- !u!1001 &709473387733997902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3319,6 +3335,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf5e1617280c9e849997da88bede9da9, type: 3}
+--- !u!4 &709473387733997903 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 709473389503470181, guid: cf5e1617280c9e849997da88bede9da9,
+    type: 3}
+  m_PrefabInstance: {fileID: 709473387733997902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4090327816349374187
 PrefabInstance:
   m_ObjectHideFlags: 0
