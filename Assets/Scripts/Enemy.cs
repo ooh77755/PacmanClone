@@ -10,6 +10,11 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        FollowPlayer();
+    }
+
+    private void FollowPlayer()
+    {
         float dist = Vector2.Distance(target.position, transform.position);
         float step = speed * Time.deltaTime;
 

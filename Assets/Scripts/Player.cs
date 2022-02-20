@@ -6,6 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     float moveSpeed = 5f;
+    int health = 200;
 
     Vector2 direction; 
     Rigidbody2D rb;
@@ -78,5 +79,26 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
             transform.localRotation = Quaternion.Euler(0, 0, -90f);
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
+        if(!damageDealer)
+        {
+            return;
+        }
+        ProcessHit(damageDealer);
+    }
+
+    private void ProcessHit(DamageDealer damageDealer)
+    {
+        health -= damageDealer.GetDamage();
+
+        if(health <=0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2837869017186302221}
   - component: {fileID: 2837869017186302220}
   - component: {fileID: 2837869017186302216}
+  - component: {fileID: 4494901514022416390}
   m_Layer: 11
   m_Name: Clyde
   m_TagString: Untagged
@@ -135,3 +136,15 @@ MonoBehaviour:
   target: {fileID: 0}
   withinRange: 10
   speed: 2
+--- !u!114 &4494901514022416390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2837869017186302223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e40bb503dd8de4290dcb3dfe542c01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
