@@ -21,6 +21,20 @@ public class Player : MonoBehaviour
         Move();
         CheckInput();
         FlipSprite();
+        WrapAround();
+    }
+
+    private void WrapAround()
+    {
+        if(transform.position.x > 1.5f)
+        {
+            transform.position = new Vector2(-17f, -1.5f);
+        }
+
+        else if(transform.position.x < -17f)
+        {
+            transform.position = new Vector2(1f, -1.5f);
+        }
     }
 
     private void Move()
