@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
     int score = 0;
+    int totalScore = 920;
 
     public int GetScore()
     {
@@ -14,5 +16,9 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int points)
     {
         score += points;
+        if(score == totalScore)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
